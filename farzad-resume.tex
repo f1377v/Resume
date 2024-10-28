@@ -4,9 +4,7 @@
 
 \documentclass[]{farzad-resume}
 
-
 \begin{document}
-
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %
 %     TITLE NAME
@@ -14,78 +12,80 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 {\tiny }
 
-\namesection{Farzad}{Vakili}{
+\namesection{Farzad}{Vakili}{ |
 \href{mailto:f1377v@gmail.com}
 {f1377v@gmail.com} | (647)834-6900 }
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %
-%     COLUMN ONE
+%     ROW ONE
 %
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-\begin{minipage}[t]{0.30\textwidth}
+\begin{minipage}[t]{\textwidth}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%     EDUCATION
+%     ROW ONE COLUMN ONE EDUCATION
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
+\begin{minipage}[t]{0.33\textwidth}
 \section{Education}
 \subsection{McMaster University}
 \descript{B.S. Software Engineering and Co-op}
 %\location{ }
-\sectionsep
-
-
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%     LINKS
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
-%\section{Links}
-%LinkedIn://  \href{https://www.linkedin.com/in/danielrazavi}{\custombold{danielrazavi}} \\
-%Github:// \href{https://github.com/DanielRazavi}{\custombold{DanielRazavi}}\\
 %\sectionsep
-
+\end{minipage}
+\hfill
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%     COURSEWORK
+%    ROW ONE COLUMN TWO AWARDS
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
+\begin{minipage}[t]{0.66\textwidth}
 \section{Awards}
 
 Dean Honor Award \\
-Mcmaster President Entrance Award, \\
-\sectionsep
-
+Mcmaster President Entrance Award \\
+%\sectionsep
+\end{minipage}
+\hfill
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%     SKILLS
+%     ROW TWO SKILLS
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
+ \end{minipage}
+\begin{minipage}[t]{\textwidth}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     ROW TWO COLUMN ONE LANGAUGES
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{minipage}[t]{0.33\textwidth}
 \section{Skills}
 \subsection{Languages}
 C\# \textbullet{}  Python \textbullet{} SQL \textbullet {}  HTML\textbullet{} CSS \\ 
 Javascript \textbullet{} PHP \textbullet{} \LaTeX\
-\sectionsep
-
+%\sectionsep
+\end{minipage}
+\begin{minipage}[t]{0.33\textwidth}
+\section{}
 \subsection{Tools \& Platfroms}
 Git \textbullet{}  MySQL \textbullet{} Docker \textbullet{} {\Large .}NET\\
 Flask\textbullet{} AWS \textbullet{} Windows Forms\\
 Jira
-\sectionsep
-
+%\sectionsep
+\end{minipage}
+\begin{minipage}[t]{0.33\textwidth}
+\section{}
 \subsection{Design}
-MVC Architecture \textbullet{} Object-Oriented Desing \\
-Microservices Architecture \textbullet{}REST API/Services\\
-
-
+MVC Architecture \\ 
+Object-Oriented Desing \\
+Microservices Architecture \\ 
+REST API/Services\\
+\end{minipage}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %
-%     COLUMN TWO
+% Row 3
 %
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \end{minipage}
-\hfill
-\begin{minipage}[t]{0.66\textwidth}
+\begin{minipage}[t]{\textwidth}
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -104,6 +104,11 @@ Microservices Architecture \textbullet{}REST API/Services\\
 	\item Developed a full stack application that automated task extraction via Jira's REST APIs, generated dynamic Gantt charts, and facilitated real-time project adjustments for enhanced tracking and stakeholder engagement.
 	\item  Automated a solution to detect and catalog lifecycle discrepancies at various stages of the development process. Streamlined project oversight by ensuring that key checkpoints were flagged for review, enhancing efficiency and reducing project delays. }
 \end{tightemize}
+
+\begin{skillsection}
+{\custombolder{Skills:} C\# \textbullet{} REST APIs \textbullet{} JavaScript \textbullet{} HTML5 \textbullet{} CSS3 \textbullet{} Git \textbullet{} User Interface Design \textbullet{} Model-View-Controller (MVC) \textbullet{} Written/Verbal Communication}
+\end{skillsection}
+
 \sectionsep
 
 \runsubsection{Software Developer Intern}
@@ -119,8 +124,12 @@ control over delaying, executing, or blocking Windows updates, surpassing the fl
 the operating system. Overcoming significant compatibility challenges posed by evolving Windows 10 security protocols.
 
 \item Developed and deployed multiple installer executables utilizing Windows Forms and Windows Presentation Foundation (WPF) for various internal applications. Leveraging .NET framework and advanced UI design to optimize installation experiences .}
-\
 \end{tightemize}
+
+\begin{skillsection}
+{\custombolder{Skills:} C\# \textbullet{} Object Oriented Programming (OOP) \textbullet{} WinForms \textbullet{} Windows Presentation Foundation (WPF) \textbullet{} .NET Framework \textbullet{} Git \textbullet{} Software Diagnostics}
+\end{skillsection}
+
 \sectionsep
 
 
@@ -135,6 +144,14 @@ the operating system. Overcoming significant compatibility challenges posed by e
 	\item Operated within an Agile framework, actively participating in Test-Driven Development (TDD) and pair programming to ensure high-quality, maintainable code.
 	\item Demonstrated a high level of autonomy and proactive ownership over project responsibilities, with minimal oversight required.}
 \end{tightemize}
+
+\begin{skillsection}
+%{\fontsize{8}{10.4} \selectfont {\color[HTML]{FF0000} Skills}: Python \textbullet{} CI/CD \textbullet{} Microservices}
+{\custombolder{Skills:} Python \textbullet{} CI/CD \textbullet{} Microservices \textbullet{} RabbitMQ  \textbullet{} Azure DevOps \textbullet{} Serialization/Deserialization}
+
+\end{skillsection}
+
+
 \sectionsep
 
 \runsubsection{Programming Instructor}
@@ -159,8 +176,13 @@ the operating system. Overcoming significant compatibility challenges posed by e
 \begin{tightemize}
 {\fontsize{8}{10.4} \selectfont 
 	\item Project-based course involving \textbf{server-side programming:} databases, dynamic languages; \textbf{ client-side programming:} markup, styles, scripts, design, mobile/desktop.
+	\item Developed a full stack website with a responsive design for seamless usability across devices of all sizes, ensuring cross-browser compatibility on popular browser. Deployed the site using AWS cloud hosting for scalability and performance.
 	\item Completed the course with an A+.}
 \end{tightemize}
+
+\begin{skillsection}
+{\custombolder{Skills:} PHP \textbullet{} MySQL \textbullet{} JavaScript \textbullet{} HTML5 \textbullet{} CSS3 \textbullet{}AJAX \textbullet{} AWS \textbullet{} Docker \textbullet{} Figma \textbullet{} User Experience (UX)}
+\end{skillsection}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %     PROJECTS

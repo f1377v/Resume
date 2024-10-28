@@ -23,13 +23,14 @@
 \definecolor{primary}{HTML}{2b2b2b}
 \definecolor{headings}{HTML}{6A6A6A}
 \definecolor{subheadings}{HTML}{333333}
+\definecolor{myred}{HTML}{FF0000}
 
 % Set main fonts
 \defaultfontfeatures{Mapping=tex-text}
 \setmainfont[Color=primary, Path = fonts/lato/]{Lato-Lig}
 \setsansfont[Scale=MatchLowercase,Mapping=tex-text, Path = fonts/raleway/]{Raleway-ExtraLight}
 \newcommand{\custombold}[1]{\color{subheadings}\fontspec[Path = fonts/lato/]{Lato-Reg}\selectfont #1 \normalfont}
-
+\newcommand{\custombolder}[1]{\color{subheadings}\fontspec[Path = fonts/lato/]{Lato-Bol}\selectfont #1 \normalfont}
 % Date command
 \setlength{\TPHorizModule}{1mm}
 \setlength{\TPVertModule}{1mm}
@@ -41,17 +42,39 @@ Last Updated on
 \end{textblock}}
 
 % Name command-----------------------------------------------
+% \newcommand{\namesection}[3]{
+% 	\centering{
+% 		\sffamily
+% 		\fontspec[Path = fonts/lato/]{Lato-Hai}\fontsize{15pt}{5cm}\selectfont #1
+% 		\fontspec[Path = fonts/lato/]{Lato-Lig}\selectfont #2
+% 	} \\
+% 	\vspace{5pt}
+% 	\centering{ \color{headings}\fontspec[Path = fonts/raleway/]{Raleway-Medium}\fontsize{9pt}{11pt}\selectfont #3}
+% 	\noindent\makebox[\linewidth]{\rule{\paperwidth}{0.4pt}}
+% 	\vspace{-15pt}
+% }
 \newcommand{\namesection}[3]{
 	\centering{
 		\sffamily
 		\fontspec[Path = fonts/lato/]{Lato-Hai}\fontsize{15pt}{5cm}\selectfont #1
 		\fontspec[Path = fonts/lato/]{Lato-Lig}\selectfont #2
+		\color{headings}\fontspec[Path = fonts/raleway/]{Raleway-Medium}\fontsize{9pt}{11pt}\selectfont #3
 	} \\
-	\vspace{5pt}
-	\centering{ \color{headings}\fontspec[Path = fonts/raleway/]{Raleway-Medium}\fontsize{9pt}{11pt}\selectfont #3}
 	\noindent\makebox[\linewidth]{\rule{\paperwidth}{0.4pt}}
 	\vspace{-15pt}
 }
+% \newcommand{\namesection}[3]{
+%     \centering
+%     \sffamily
+%     \fontspec[Path = fonts/lato/]{Lato-Hai}\fontsize{15pt}{5cm}\selectfont #1
+%     \fontspec[Path = fonts/lato/]{Lato-Lig}\selectfont #2
+%     \hspace{1em} % Adjusts space between name and additional info
+%     \color{headings}\fontspec[Path = fonts/raleway/]{Raleway-Medium}\fontsize{9pt}{11pt}\selectfont #3
+%     \par % Ensures the text is properly centered
+%     \vspace{5pt}
+%     \noindent\makebox[\linewidth]{\rule{\paperwidth}{0.4pt}}
+%     \vspace{-15pt}
+% }
 \titlespacing{\section}{0pt}{0pt}{0pt}
 
 % Headings command
@@ -77,3 +100,13 @@ Last Updated on
 
 % Bullet Lists with fewer gaps command
 \newenvironment{tightemize}{\vspace{-\topsep}\begin{itemize}\itemsep1pt \parskip0pt \parsep0pt}{\end{itemize}\vspace{-\topsep}}
+
+\newenvironment{skillsection}{%
+    \vspace{\parsep} % Add some space before the skills section
+    \noindent\hspace*{\leftmargini} % Match tightemize left margin
+    \begin{minipage}{\dimexpr\textwidth-\leftmargini\relax}
+	\fontsize{8}{10.4}\selectfont
+}{
+    \end{minipage}
+    \par\vspace{\parsep} % Add some space after the skills section
+}
